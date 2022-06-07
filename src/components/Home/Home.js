@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Home = () => {
     return (
-        <div>
+        <div class="h-screen flex bg-base-200 justify-center items-center">
             <motion.div
                 initial={{ scale: 0, rotate: 360 }}
                 animate={{ rotate: 0, scale: 1 }}
@@ -13,11 +13,14 @@ const Home = () => {
                     damping: 20
                 }}
             >
-                <div>
-                    <h1>Home</h1>
+
+                <div class="w-[1080px] h-[500px] rounded-xl mx-auto bg-white">
+                    
                 </div>
+
             </motion.div>
         </div>
+
     );
 };
 
