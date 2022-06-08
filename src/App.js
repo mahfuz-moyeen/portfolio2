@@ -9,21 +9,23 @@ import Contact from "./components/Contact/Contact";
 import Project from "./components/Project/Project";
 import MyServices from "./components/MyServices/MyServices";
 import "swiper/css/bundle";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <div >
       <CustomCursor
-        targets={['.link','a',
-        'input[type="text"]',
-        'input[type="email"]',
-        'input[type="number"]',
-        'input[type="submit"]',
-        'input[type="image"]',
-        'label[for]',
-        'select',
-        'textarea',
-        'button',]}
+        targets={['.link', 'a',
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          'label[for]',
+          'select',
+          'textarea',
+          'button',]}
         customClass='custom-cursor'
         dimensions={40}
         fill='#8ED1FC'
@@ -31,7 +33,7 @@ function App() {
         targetOpacity={0.7}
         targetScale={1.5}
       />
-
+      <ToastContainer />
       <div className='hidden md:block'>
         <Sidebar />
       </div>
