@@ -172,33 +172,40 @@ const Sidebar = () => {
             <img src={Team} alt="About" />
             <Text clicked={click}>About</Text>
           </Item>
+
+          {/* skill */}
           <Item
             onClick={() => setClick(false)}
             activeclass="active"
-            to="/calender"
+            to="/skill"
           >
-            <img src={Calender} alt="Calender" />
-            <Text clicked={click}>Calender</Text>
+            <img src={Calender} alt="skill" />
+            <Text clicked={click}>Skill</Text>
           </Item>
+
+          {/* project  */}
           <Item
             onClick={() => setClick(false)}
             activeclass="active"
-            to="/documents"
-          >
-            <img src={Documents} alt="Documents" />
-            <Text clicked={click}>Documents</Text>
-          </Item>
-          <Item
-            onClick={() => setClick(false)}
-            activeclass="active"
-            to="/projects"
+            to="/project"
           >
             <img src={Projects} alt="Projects" />
             <Text clicked={click}>Projects</Text>
           </Item>
+
+          {/* contact  */}
+          <Item
+            onClick={() => setClick(false)}
+            activeclass="active"
+            to="/contact"
+          >
+            <img src={Documents} alt="contact" />
+            <Text clicked={click}>Contact</Text>
+          </Item>
+
         </SlickBar>
 
-        
+
       </SidebarContainer>
     </Container>
   );

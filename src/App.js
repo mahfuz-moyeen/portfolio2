@@ -5,6 +5,9 @@ import About from "./components/About/About";
 import CustomCursor from "custom-cursor-react";
 import 'custom-cursor-react/dist/index.css';
 import './App.css';
+import Contact from "./components/Contact/Contact";
+import Project from "./components/Project/Project";
+import Skill from "./components/Skill/Skill";
 
 
 function App() {
@@ -36,6 +39,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/skill" element={<Skill />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
 
     </div >

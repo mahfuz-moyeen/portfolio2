@@ -5,6 +5,7 @@ import TitleBar from '../TitleBar/TitleBar';
 import { Typewriter } from 'react-simple-typewriter';
 import { useTypewriter } from 'react-simple-typewriter'
 import { useMediaQuery } from 'react-responsive'
+import { Link } from 'react-router-dom';
 
 
 function myFunc(el) {
@@ -15,7 +16,7 @@ function myFunc(el) {
 const TypewriterHook = () => {
 
     const { text } = useTypewriter({
-        words: ['Hello', 'From', 'Typewriter', 'Hook!'],
+        words: ['Fullstack Web Developer', 'Front-end Developer', 'MERN Stack Developer','UI & UX Designer'],
         loop: 0, // Infinit
     })
 
@@ -106,9 +107,9 @@ const Home = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className='w-10/12 mx-auto flex justify-evenly'>
-                                <button className='btn btn-outline btn-primary'>Hire me</button>
-                                <button className='btn btn-outline btn-primary'>About me</button>
+                            <div className='w-10/12 mx-auto flex justify-evenly pb-10 md:pb-0'>
+                                <Link to='contact' className='btn btn-outline btn-primary'>Hire me</Link>
+                                <Link to='about' className='btn btn-outline btn-primary'>About me</Link>
                             </div>
                         </div>
 
