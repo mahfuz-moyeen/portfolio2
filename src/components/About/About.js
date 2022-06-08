@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import TitleBar from '../TitleBar/TitleBar';
+import Social from '../Social/Social';
+import MyResume from '../MyResume/MyResume';
 
 const About = () => {
     return (
@@ -27,13 +29,13 @@ const About = () => {
                             <div className='p-5'>
                                 <img className='rounded-2xl' src="https://avstechnolabs.com/Themeforest/Gaspar/01/Dark/assets/images/profile/wrap.jpg" alt="profile" />
                             </div>
-                            <div className='lg:col-span-2 flex items-center'>
+                            <div className='w-10/12 mx-auto lg:col-span-2 flex items-center'>
                                 <div>
                                     <h1 className='text-left mb-10 text-2xl text-gray-200'>Personal <span className='text-primary'>Informations</span></h1>
-                                    <div className='grid grid-cols-2 gap-5 text-lg'>
+                                    <div className='grid grid-cols-2 gap-5 lg:text-lg'>
                                         <h1>First Name: <span className='text-gray-200'>Mahfuz Zahan</span></h1>
 
-                                        <h1>Email: <span className='text-primary'>mahfuzmoyeen01@gmail.com</span></h1>
+                                        <h1>Email: <span className='text-primary break-words'>mahfuzmoyeen01@gmail.com</span></h1>
 
                                         <h1>Last Name: <span className='text-gray-200'>Moyeen</span></h1>
 
@@ -44,14 +46,16 @@ const About = () => {
                                         <h1>Languages: <span className='text-gray-200'>Bengli, English</span></h1>
 
                                     </div>
-                                    <button className='my-5 btn btn-outline btn-accent'>Download Resume</button>
-                                    <div class="divider">
-                                        
+                                    <button className='my-5 btn btn-accent block mx-auto lg:mx-0'>Download Resume</button>
+
+                                    <div class="divider pt-10">
+                                        <Social />
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+                        <MyResume />
                     </div>
                 </div>
 
