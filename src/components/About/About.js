@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import TitleBar from '../TitleBar/TitleBar';
 import Social from '../Social/Social';
 import MyResume from '../MyResume/MyResume';
+import MySkills from '../MySkills/MySkills';
 
 const About = () => {
     return (
@@ -56,6 +57,8 @@ const About = () => {
                         </div>
 
                         <MyResume />
+                        
+                        <MySkills />
                     </div>
                 </div>
 

@@ -7,7 +7,7 @@ import 'custom-cursor-react/dist/index.css';
 import './App.css';
 import Contact from "./components/Contact/Contact";
 import Project from "./components/Project/Project";
-import Skill from "./components/Skill/Skill";
+import MyServices from "./components/MyServices/MyServices";
 
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/project" element={<Project />} />
-        <Route path="/skill" element={<Skill />} />
+        <Route path="/services" element={<MyServices />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
 

@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from "framer-motion";
 
-const Skill = () => {
+const MyServices = () => {
     return (
         <div className="mt-5 md:mt-0 md:min-h-screen flex bg-base-200 justify-center items-center">
             <motion.div
-                initial={{ scale: 0, rotate: 270 }}
-                animate={{ rotate: 0, scale: 1 }}
+                initial={{ scale: 0}}
+                animate={{ scale: 1 }}
                 transition={{
                     type: "spring",
                     stiffness: 260,
@@ -25,4 +25,4 @@ const Skill = () => {
     );
 };
 
-export default Skill;
+export default MyServices;

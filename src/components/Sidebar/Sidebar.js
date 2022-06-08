@@ -177,10 +177,10 @@ const Sidebar = () => {
           <Item
             onClick={() => setClick(false)}
             activeclass="active"
-            to="/skill"
+            to="/services"
           >
-            <img src={Calender} alt="skill" />
-            <Text clicked={click}>Skill</Text>
+            <img src={Calender} alt="services" />
+            <Text clicked={click}>Service</Text>
           </Item>
 
           {/* project  */}
