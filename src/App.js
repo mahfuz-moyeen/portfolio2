@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import Sidebar from "./components/Sidebar/Sidebar";
-import About from "./components/About";
+import About from "./components/About/About";
 import CustomCursor from "custom-cursor-react";
 import 'custom-cursor-react/dist/index.css';
 import './App.css';
