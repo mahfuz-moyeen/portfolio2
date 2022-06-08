@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { FaQuoteLeft ,FaQuoteRight,FaStar} from 'react-icons/fa';
+import { FaQuoteLeft, FaQuoteRight, FaStar } from 'react-icons/fa';
 import { Autoplay, Pagination, Navigation } from "swiper";
 import './MyTestimonial.css'
 
@@ -44,7 +44,7 @@ const MyTestimonial = () => {
         }
     ];
 
-   
+
 
     return (
         <div>
@@ -57,17 +57,24 @@ const MyTestimonial = () => {
 
             <section>
                 <div className="testimonials-carousel-wrap w-11/12 mx-auto bg-neutral">
-                    
-                    
-                    <div className="testimonials-carousel w-10/12 mx-auto">
+
+
+                    <div className="testimonials-carousel max-w-sm lg:max-w-full mx-auto">
 
                         <Swiper
+                            slidesPerView={1}
                             spaceBetween={30}
                             centeredSlides={true}
                             autoplay={{
-                                delay: 2500,
+                                delay: 3000,
                                 disableOnInteraction: false,
                             }}
+                            breakpoints={{
+                                640: {
+                                  slidesPerView: 2,
+                                  spaceBetween: 20,
+                                }
+                              }}
                             navigation={true}
                             modules={[Autoplay, Pagination, Navigation]}
                             className="mySwiper"
@@ -81,15 +88,15 @@ const MyTestimonial = () => {
                                                 <img src={testimonial.image} />
                                             </div>
                                             <div className="testimonials-text-before">
-                                            <FaQuoteLeft className='w-8 h-8 hover:text-accent' />
+                                                <FaQuoteLeft className='w-8 h-8 hover:text-accent' />
                                             </div>
                                             <div className="testimonials-text">
                                                 <div className="flex flex-row justify-center">
-                                                <FaStar className='text-primary' />
-                                                <FaStar className='text-primary' />
-                                                <FaStar className='text-primary' />
-                                                <FaStar className='text-primary' />
-                                                <FaStar className='text-primary' />
+                                                    <FaStar className='text-primary' />
+                                                    <FaStar className='text-primary' />
+                                                    <FaStar className='text-primary' />
+                                                    <FaStar className='text-primary' />
+                                                    <FaStar className='text-primary' />
                                                 </div>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text of the printing and
@@ -104,7 +111,7 @@ const MyTestimonial = () => {
                                                 </div>
                                             </div>
                                             <div className="testimonials-text-after">
-                                            <FaQuoteRight className='w-8 h-8 hover:text-accent' />
+                                                <FaQuoteRight className='w-8 h-8 hover:text-accent' />
                                             </div>
                                         </div>
                                     </SwiperSlide>
