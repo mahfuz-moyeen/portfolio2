@@ -8,7 +8,7 @@ import './App.css';
 import Contact from "./components/Contact/Contact";
 import Project from "./components/Project/Project";
 import MyServices from "./components/MyServices/MyServices";
-
+import "swiper/css/bundle";
 
 function App() {
   return (
