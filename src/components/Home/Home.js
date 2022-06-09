@@ -78,7 +78,7 @@ const Home = () => {
                         </div>
 
                         <div className='p-10 block lg:hidden'>
-                            <img className='rounded-2xl' src="https://avstechnolabs.com/Themeforest/Gaspar/01/Dark/assets/images/profile/wrap.jpg" alt="profile" />
+                            <img className='rounded-2xl' src={photo} alt="profile" />
                         </div>
 
                         {/* title section  */}

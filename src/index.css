@@ -9,11 +9,21 @@
   --white: #fff;
   --background: #89abf55e;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #0085FF;
+}
 
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import {NavLink, useLocation } from 'react-router-dom';
 
 const MobileBar = () => {
     const Menus = [
@@ -19,7 +19,7 @@ const MobileBar = () => {
         setPath(item)
     }, [location])
 
-    console.log(path);
+    console.log(active);
 
 
     return (

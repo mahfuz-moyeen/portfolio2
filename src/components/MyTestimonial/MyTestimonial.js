@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import TitleBar from '../TitleBar/TitleBar';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
