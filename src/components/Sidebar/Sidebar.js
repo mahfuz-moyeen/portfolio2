@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../assets/logo.svg";
+import logo from "../../Image/logoPng.png";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
@@ -75,14 +75,14 @@ const SidebarContainer = styled.div`
   position: relative;
 `;
 
-const Logo = styled.div`
-  width: 2rem;
+// const Logo = styled.div`
+//   width: 2rem;
 
-  img {
-    width: 100%;
-    height: auto;
-  }
-`;
+//   img {
+//     width: 100%;
+//     height: auto;
+//   }
+// `;
 
 const SlickBar = styled.ul`
   color: var(--white);
@@ -154,12 +154,14 @@ const Sidebar = () => {
 
 
   return (
-    <Container>
+    <Container className="z-50">
       <Button clicked={click} onClick={() => handleClick()}></Button>
       <SidebarContainer>
-        <Logo>
-          <img src={logo} alt="logo" />
-        </Logo>
+
+        {/* <Logo> */}
+          <img className="w-30" src={logo} alt="logo" />
+        {/* </Logo> */}
+
         <SlickBar clicked={click}>
 
           {/* home  */}

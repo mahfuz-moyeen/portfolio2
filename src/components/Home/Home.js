@@ -7,6 +7,7 @@ import { useTypewriter } from 'react-simple-typewriter'
 import { useMediaQuery } from 'react-responsive'
 import { Link } from 'react-router-dom';
 import Social from '../Social/Social';
+import photo from '../../Image/pp.jpg'
 import resume from '../../file/Mahfuz_Zahan_Moyeen.pdf'
 import { MdOutlineFileDownload } from 'react-icons/md';
 
@@ -71,7 +72,7 @@ const Home = () => {
                                     onTiltChange={handleTiltChange}
                                     className="tilt-elem my-tilt"
                                 >
-                                    <img className='rounded-2xl' src="https://avstechnolabs.com/Themeforest/Gaspar/01/Dark/assets/images/profile/wrap.jpg" alt="profile" />
+                                    <img className='rounded-2xl' src={photo} alt="profile" />
                                 </ReactTilt>
                             }
                         </div>

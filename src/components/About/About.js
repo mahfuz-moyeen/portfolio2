@@ -5,6 +5,7 @@ import Social from '../Social/Social';
 import MyResume from '../MyResume/MyResume';
 import MySkills from '../MySkills/MySkills';
 import resume from '../../file/Mahfuz_Zahan_Moyeen.pdf'
+import photo from '../../Image/pp.jpg'
 import { MdOutlineFileDownload } from 'react-icons/md';
 
 const About = () => {
@@ -30,7 +31,7 @@ const About = () => {
                         </div>
                         <div className='grid grid-cols-1 lg:grid-cols-3 gap-2'>
                             <div className='p-5'>
-                                <img className='rounded-2xl' src="https://avstechnolabs.com/Themeforest/Gaspar/01/Dark/assets/images/profile/wrap.jpg" alt="profile" />
+                                <img className='rounded-2xl' src={photo} alt="profile" />
                             </div>
                             <div className='w-10/12 mx-auto lg:col-span-2 flex items-center'>
                                 <div>

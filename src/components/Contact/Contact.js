@@ -55,7 +55,7 @@ const Contact = () => {
 
                     </div>
 
-                    <div className='w-11/12 mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 gap-2'>
+                    <div className='w-10/12 lg:w-11/12 mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-2'>
 
                         <div className="card rounded lg:rounded-md flex-shrink-0 bg-transparent border-2 w-full max-w-md">
                             <div className="card-body text-left">
