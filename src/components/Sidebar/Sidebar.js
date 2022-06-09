@@ -1,21 +1,21 @@
 import React, { useState } from "react";
-
-//All the svg files
 import logo from "../../assets/logo.svg";
-import Home from "../../assets/home-solid.svg";
-import Team from "../../assets/social.svg";
-import Calender from "../../assets/sceduled.svg";
-import Projects from "../../assets/starred.svg";
-import Documents from "../../assets/draft.svg";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+
+import { FaHome, FaUser } from 'react-icons/fa';
+import { MdHomeRepairService, MdWebStories, MdContactPhone } from 'react-icons/md';
+
+
 
 const Container = styled.div`
   position: fixed;
 
   .active {
-    border-right: 4px solid var(--white);
-
+    border-right: 4px solid #0085FF;
+    i {
+      color: #0085FF;
+    }
     img {
       filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
         brightness(103%) contrast(103%);
@@ -116,10 +116,15 @@ const Item = styled(NavLink)`
   &:hover {
     border-right: 4px solid var(--white);
 
+    i {
+      color: var(--white);
+    }
+
     img {
       filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
         brightness(103%) contrast(103%);
     }
+    
   }
 
   img {
@@ -128,6 +133,11 @@ const Item = styled(NavLink)`
     filter: invert(92%) sepia(4%) saturate(1033%) hue-rotate(169deg)
       brightness(78%) contrast(85%);
   }
+
+  i {
+    color: #9ca3af;
+  }
+
 `;
 
 const Text = styled.span`
@@ -159,7 +169,7 @@ const Sidebar = () => {
             activelass="active"
             to="/"
           >
-            <img src={Home} alt="Home" />
+            <i><FaHome className="w-6 h-6" /></i>
             <Text clicked={click}>Home</Text>
           </Item>
 
@@ -169,17 +179,17 @@ const Sidebar = () => {
             activeclass="active"
             to="/about"
           >
-            <img src={Team} alt="About" />
+            <i><FaUser className="w-6 h-6" /></i>
             <Text clicked={click}>About</Text>
           </Item>
 
-          {/* skill */}
+          {/* service */}
           <Item
             onClick={() => setClick(false)}
             activeclass="active"
             to="/services"
           >
-            <img src={Calender} alt="services" />
+            <i><MdHomeRepairService className="w-6 h-6" /></i>
             <Text clicked={click}>Service</Text>
           </Item>
 
@@ -189,7 +199,7 @@ const Sidebar = () => {
             activeclass="active"
             to="/project"
           >
-            <img src={Projects} alt="Projects" />
+            <i><MdWebStories className="w-6 h-6" /></i>
             <Text clicked={click}>Projects</Text>
           </Item>
 
@@ -199,7 +209,7 @@ const Sidebar = () => {
             activeclass="active"
             to="/contact"
           >
-            <img src={Documents} alt="contact" />
+            <i><MdContactPhone className="w-6 h-6" /></i>
             <Text clicked={click}>Contact</Text>
           </Item>
 

@@ -57,7 +57,7 @@ const Contact = () => {
 
                     <div className='w-11/12 mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 gap-2'>
 
-                        <div className="card rounded lg:rounded-md flex-shrink-0 bg-transparent w-full max-w-md">
+                        <div className="card rounded lg:rounded-md flex-shrink-0 bg-transparent border-2 w-full max-w-md">
                             <div className="card-body text-left">
                                 <h1 className='text-center text-2xl text-gray-100'>Contact Info</h1>
                                 <p className='text-center text-gray-300'>Feel free to contact me!</p>
@@ -98,7 +98,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className="card rounded lg:rounded-md flex-shrink-0 bg-transparent w-full max-w-md">
+                        <div className="card rounded border-2 lg:rounded-md flex-shrink-0 bg-transparent w-full max-w-md">
                             <div className="card-body">
                                 <h1 className='text-center text-2xl text-gray-100'>Contact me</h1>
                                 <form onSubmit={handleSubmit(onSubmit)}>
@@ -179,6 +179,8 @@ const Contact = () => {
                                 </form>
                             </div>
                         </div>
+
+                        
                     </div>
                 </div>
 

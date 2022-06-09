@@ -11,6 +11,7 @@ import MyServices from "./components/MyServices/MyServices";
 import "swiper/css/bundle";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import MobileBar from "./components/MobileBar/MobileBar";
 
 function App() {
   return (
@@ -46,6 +47,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
+      <div className="block md:hidden fixed bottom-0 min-w-full">
+        <MobileBar />
+      </div>
     </div >
   );
 }

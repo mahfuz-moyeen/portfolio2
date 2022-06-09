@@ -4,6 +4,8 @@ import TitleBar from '../TitleBar/TitleBar';
 import Social from '../Social/Social';
 import MyResume from '../MyResume/MyResume';
 import MySkills from '../MySkills/MySkills';
+import resume from '../../file/Mahfuz_Zahan_Moyeen.pdf'
+import { MdOutlineFileDownload } from 'react-icons/md';
 
 const About = () => {
     return (
@@ -47,7 +49,7 @@ const About = () => {
                                         <h1>Languages: <span className='text-gray-200'>Bengli, English</span></h1>
 
                                     </div>
-                                    <button className='my-5 btn btn-accent block mx-auto lg:mx-0'>Download Resume</button>
+                                    <a href={resume} className='mt-10 btn btn-outline btn-primary'>Download Resume <MdOutlineFileDownload className='w-6 h-6 mx-2 '/></a>
 
                                     <div class="divider pt-10">
                                         <Social />

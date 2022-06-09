@@ -6,6 +6,10 @@ import { Typewriter } from 'react-simple-typewriter';
 import { useTypewriter } from 'react-simple-typewriter'
 import { useMediaQuery } from 'react-responsive'
 import { Link } from 'react-router-dom';
+import Social from '../Social/Social';
+import resume from '../../file/Mahfuz_Zahan_Moyeen.pdf'
+import { MdOutlineFileDownload } from 'react-icons/md';
+
 
 
 function myFunc(el) {
@@ -90,8 +94,8 @@ const Home = () => {
                                 </h1>
 
                                 {/* icon  */}
-                                <div>
-                                    iconsss
+                                <div className='divider py-5'>
+                                    <Social/>
                                 </div>
                                 <div className='p-5'>
                                     <p>
@@ -108,7 +112,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className='w-10/12 mx-auto flex justify-evenly pb-10 md:pb-0'>
-                                <Link to='contact' className='btn btn-outline btn-primary'>Hire me</Link>
+                                <a href={resume} className='btn btn-outline btn-primary'>Download Resume <MdOutlineFileDownload className='w-6 h-6 mx-2 '/></a>
                                 <Link to='about' className='btn btn-outline btn-primary'>About me</Link>
                             </div>
                         </div>
