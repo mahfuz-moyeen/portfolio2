@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { motion } from "framer-motion";
 import TitleBar from '../TitleBar/TitleBar';
 import { FaUser } from 'react-icons/fa';
@@ -6,29 +6,28 @@ import { MdOutlineCall, MdLocationPin, MdAlternateEmail } from 'react-icons/md';
 import Social from '../Social/Social';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
-import MyLocation from './MyLocation';
+import emailjs from '@emailjs/browser';
+// import MyLocation from './MyLocation';
 
 
 
 const Contact = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
+    const form = useRef();
+
     const onSubmit = data => {
-        console.log(data);
-        // fetch('/contact', {
-        //     method: 'POST',
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(data)
-        // })
-        //     .then(res => res.json())
-        //     .then(result => {
-        //         toast.success('Your message send  successfully')
-        //         reset();
-        //     })
-        toast.success('Your message send  successfully')
-        reset()
+        // console.log(data);
+        emailjs.sendForm('service_m5i2ddr', 'template_br4zjmi', form.current, '4SDq02rBqqNcRGxCn')
+            .then((result) => {
+                toast.success('Your message send  successfully')
+                reset()
+                // console.log(result.text);
+            }, (error) => {
+                console.log("error");
+
+            });
+
 
     }
 
@@ -102,7 +101,7 @@ const Contact = () => {
                         <div className="card rounded border-2 border-primary lg:rounded-md flex-shrink-0 bg-transparent w-full max-w-md">
                             <div className="card-body">
                                 <h1 className='text-center text-2xl text-gray-100'>Contact me</h1>
-                                <form onSubmit={handleSubmit(onSubmit)}>
+                                <form ref={form} onSubmit={handleSubmit(onSubmit)}>
                                     <div className='flex flex-col lg:flex-row gap-2 justify-between'>
                                         <div className="form-control">
                                             <label className="label">
@@ -112,7 +111,7 @@ const Contact = () => {
                                                 {...register("name", {
                                                     required: {
                                                         value: true,
-                                                        message: 'name is Required'
+                                                        message: 'Name is Required'
                                                     }
                                                 })} />
                                             <label className="label">

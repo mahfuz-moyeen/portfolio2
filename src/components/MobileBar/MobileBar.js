@@ -19,7 +19,6 @@ const MobileBar = () => {
         setPath(item)
     }, [location])
 
-    console.log(active);
 
 
     return (
