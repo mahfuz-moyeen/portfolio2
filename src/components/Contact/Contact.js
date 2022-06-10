@@ -6,13 +6,14 @@ import { MdOutlineCall, MdLocationPin, MdAlternateEmail } from 'react-icons/md';
 import Social from '../Social/Social';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
+import MyLocation from './MyLocation';
 
 
 
 const Contact = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
-    const onSubmit =  data => {
+    const onSubmit = data => {
         console.log(data);
         // fetch('/contact', {
         //     method: 'POST',
@@ -57,7 +58,7 @@ const Contact = () => {
 
                     <div className='w-10/12 lg:w-11/12 mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-2'>
 
-                        <div className="card rounded lg:rounded-md flex-shrink-0 bg-transparent w-full max-w-md">
+                        <div className="card rounded lg:rounded-md flex-shrink-0 bg-transparent md:border-2 border-primary w-full max-w-md">
                             <div className="card-body text-left">
                                 <h1 className='text-center text-2xl text-gray-100'>Contact Info</h1>
                                 <p className='text-center text-gray-300'>Feel free to contact me!</p>
@@ -98,7 +99,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className="card rounded border-2 lg:rounded-md flex-shrink-0 bg-transparent w-full max-w-md">
+                        <div className="card rounded border-2 border-primary lg:rounded-md flex-shrink-0 bg-transparent w-full max-w-md">
                             <div className="card-body">
                                 <h1 className='text-center text-2xl text-gray-100'>Contact me</h1>
                                 <form onSubmit={handleSubmit(onSubmit)}>
@@ -180,8 +181,9 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        
+
                     </div>
+                    {/* <MyLocation /> */}
                 </div>
 
             </motion.div>

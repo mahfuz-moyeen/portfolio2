@@ -9,3 +9,4 @@
 * custom-cursor-react
 * styled-components
 * react-toastify
+* react-leaflet
