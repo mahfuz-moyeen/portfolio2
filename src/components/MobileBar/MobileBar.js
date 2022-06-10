@@ -23,7 +23,7 @@ const MobileBar = () => {
 
 
     return (
-        <div className="bg-neutral max-h-[5rem] px-6 rounded-t-xl">
+        <div className="bg-neutral max-h-[5rem] px-6 rounded-t-xl z-50 ">
             <ul className="flex relative">
                 <span
                     className={`bg-primary duration-500 ${path.dis} border-4 border-gray-900 h-16 w-16 absolute

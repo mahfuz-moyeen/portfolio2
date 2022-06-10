@@ -57,7 +57,7 @@ const Home = () => {
                     damping: 20
                 }}
             >
-                <div className="w-10/12 h-[700px] md:w-[35rem] md:h-[50rem] lg:w-[70rem] lg:h-[35rem] rounded-xl mx-auto bg-neutral overflow-y-auto">
+                <div className="w-10/12 h-[550px] md:w-[35rem] md:h-[50rem] lg:w-[70rem] lg:h-[35rem] rounded-xl mx-auto bg-neutral overflow-y-auto">
 
                     <div className=' grid grid-cols-1 lg:grid-cols-2 gap-3'>
 
@@ -83,14 +83,14 @@ const Home = () => {
 
                         {/* title section  */}
                         <div>
-                            <div className='text-center py-10'>
+                            <div className='text-center lg:py-10'>
                                 <p className='text-xl'> Hello, I'm </p>
-                                <h1 className="text-5xl font-bold text-gray-200 my-3">
+                                <h1 className="text-4xl md:text-5xl font-bold text-gray-200 my-3">
                                     Mahfuz <span className='text-primary'>Moyeen</span>
                                 </h1>
                                 <TitleBar />
 
-                                <h1 className='my-5 h-8 text-3xl text-accent'>
+                                <h1 className='my-5 h-8 text-2xl md:text-3xl text-accent'>
                                     <TypewriterHook />
                                 </h1>
 
@@ -112,7 +112,7 @@ const Home = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className='w-10/12 mx-auto flex justify-evenly pb-10 md:pb-0'>
+                            <div className='w-10/12 mx-auto flex flex-col lg:flex-row justify-evenly pb-10 md:pb-0 gap-5 lg;gap-2'>
                                 <a href={resume} className='btn btn-outline btn-primary'>Download Resume <MdOutlineFileDownload className='w-6 h-6 mx-2 '/></a>
                                 <Link to='about' className='btn btn-outline btn-primary'>About me</Link>
                             </div>

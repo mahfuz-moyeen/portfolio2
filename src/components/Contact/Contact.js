@@ -42,7 +42,7 @@ const Contact = () => {
                     damping: 20
                 }}
             >
-                <div className="w-10/12 h-[700px] md:w-[35rem] md:h-[50rem] lg:w-[70rem] lg:h-[35rem] rounded-xl mx-auto bg-neutral overflow-y-auto">
+                <div className="w-10/12 h-[550px] md:w-[35rem] md:h-[50rem] lg:w-[70rem] lg:h-[35rem] rounded-xl mx-auto bg-neutral overflow-y-auto">
                     <div>
                         <div className='text-center my-5' >
                             <p className='text-lg'>Feel Free To Contact Me Anytimes</p>

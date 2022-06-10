@@ -47,15 +47,15 @@ const MyTestimonial = () => {
 
 
     return (
-        <div>
-            <div className='text-center my-10' >
+        <div className="">
+            <div className='text-center my-10 ' >
                 <p className='text-lg'>What Our Clients Say</p>
                 <h1 className="text-4xl font-bold text-gray-200 my-3">My <span className='text-primary'>Testimonial</span>
                 </h1>
                 <TitleBar />
             </div>
 
-            <section>
+            <section className="">
                 <div className="testimonials-carousel-wrap w-11/12 mx-auto bg-neutral">
 
 
@@ -76,7 +76,7 @@ const MyTestimonial = () => {
                                 }
                               }}
                             navigation={true}
-                            modules={[Autoplay, Pagination, Navigation]}
+                            modules={[ Pagination, Navigation]}
                             className="mySwiper"
                         >
                             {
