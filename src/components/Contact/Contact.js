@@ -42,10 +42,10 @@ const Contact = () => {
                     damping: 20
                 }}
             >
-                <div className="w-10/12 h-[550px] md:w-[35rem] md:h-[50rem] lg:w-[70rem] lg:h-[35rem] rounded-xl mx-auto bg-neutral overflow-y-auto">
+                <div className="w-11/12 h-[550px] md:w-[35rem] md:h-[50rem] lg:w-[70rem] lg:h-[35rem] rounded-xl mx-auto bg-neutral overflow-y-auto">
                     <div>
                         <div className='text-center my-5' >
-                            <p className='text-lg'>Feel Free To Contact Me Anytimes</p>
+                            <p className='md:text-lg'>Feel Free To Contact Me Anytimes</p>
                             <h1 className="text-4xl font-bold text-gray-200 my-3">
                                 My <span className='text-primary'>Contact</span>
                             </h1>
@@ -57,12 +57,12 @@ const Contact = () => {
 
                     <div className='w-10/12 lg:w-11/12 mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-2'>
 
-                        <div className="card rounded lg:rounded-md flex-shrink-0 bg-transparent border-2 w-full max-w-md">
+                        <div className="card rounded lg:rounded-md flex-shrink-0 bg-transparent w-full max-w-md">
                             <div className="card-body text-left">
                                 <h1 className='text-center text-2xl text-gray-100'>Contact Info</h1>
                                 <p className='text-center text-gray-300'>Feel free to contact me!</p>
 
-                                <div className='flex items-center '>
+                                <div className='flex flex-col md:flex-row items-center text-center md:text-left pt-5 md:pt-0'>
                                     <FaUser className='w-10 h-10 text-primary' />
                                     <div className='p-2'>
                                         <h1 className='font-semibold text-white'>Name</h1>
@@ -70,7 +70,7 @@ const Contact = () => {
                                     </div>
                                 </div>
 
-                                <div className='flex items-center '>
+                                <div className='flex flex-col md:flex-row items-center text-center md:text-left'>
                                     <MdLocationPin className='w-10 h-10 text-primary' />
                                     <div className='p-2'>
                                         <h1 className='font-semibold text-white'>Location</h1>
@@ -78,7 +78,7 @@ const Contact = () => {
                                     </div>
                                 </div>
 
-                                <div className='flex items-center '>
+                                <div className='flex flex-col md:flex-row items-center text-center md:text-left'>
                                     <MdOutlineCall className='w-10 h-10 text-primary' />
                                     <div className='p-2'>
                                         <h1 className='font-semibold text-white'>Call Me</h1>
@@ -86,7 +86,7 @@ const Contact = () => {
                                     </div>
                                 </div>
 
-                                <div className='flex items-center '>
+                                <div className='flex flex-col md:flex-row items-center text-center md:text-left'>
                                     <MdAlternateEmail className='w-10 h-10 text-primary' />
                                     <div className='p-2'>
                                         <h1 className='font-semibold text-white'>Email Me</h1>

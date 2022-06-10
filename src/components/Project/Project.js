@@ -31,10 +31,10 @@ const Project = () => {
 
                         <div className='grid grid-cols-1 lg:grid-cols-3 gap-2'>
 
-                            <div class={`${style.card} h-60 mx-10 lg:mx-16 my-2 lg:my-12`}>
-                                <div class={`${style.cardSide} ${style.front} h-60 lg:h-80`}>
+                            <div class={`${style.card} h-60 mx-12 md:mx-10 lg:mx-16 my-2 lg:my-12`}>
+                                <div class={`${style.cardSide} ${style.front} h-60 lg:h-80 w-[90%] md:w-[80%]`}>
                                     <div className=''>
-                                        <img src={project01} alt="Project" className="rounded-xl h-60 lg:h-80" />
+                                        <img src={project01} alt="Project" className="rounded-xl w-full h-60 lg:h-80" />
                                     </div>
                                 </div>
                                 <div class={`${style.cardSide} ${style.back} h-60 lg:h-80`}>
@@ -54,10 +54,10 @@ const Project = () => {
                             </div>
 
 
-                            <div class={`${style.card} h-60 mx-10 lg:mx-16 my-2 lg:my-12`}>
-                                <div class={`${style.cardSide} ${style.front} h-60 lg:h-80`}>
+                            <div class={`${style.card} h-60 mx-12 md:mx-10 lg:mx-16 my-2 lg:my-12`}>
+                                <div class={`${style.cardSide} ${style.front} h-60 lg:h-80 w-[90%] md:w-[80%]`}>
                                     <div className=''>
-                                        <img src={project02} alt="Project" className="rounded-xl h-60 lg:h-80" />
+                                        <img src={project02} alt="Project" className="rounded-xl w-full h-60 lg:h-80" />
                                     </div>
                                 </div>
                                 <div class={`${style.cardSide} ${style.back} h-60 lg:h-80`}>
@@ -74,10 +74,10 @@ const Project = () => {
                                 </div>
                             </div>
 
-                            <div class={`${style.card} h-60 mx-10 lg:mx-16 my-2 lg:my-12`}>
-                                <div class={`${style.cardSide} ${style.front} h-60 lg:h-80`}>
+                            <div class={`${style.card} h-60 mx-12 md:mx-10 lg:mx-16 my-2 lg:my-12`}>
+                                <div class={`${style.cardSide} ${style.front} h-60 lg:h-80 w-[90%] md:w-[80%]`}>
                                     <div className=''>
-                                        <img src={project03} alt="Project" className="rounded-xl h-60 lg:h-80" />
+                                        <img src={project03} alt="Project" className="rounded-xl w-full h-60 lg:h-80" />
                                     </div>
                                 </div>
                                 <div class={`${style.cardSide} ${style.back} h-60 lg:h-80`}>

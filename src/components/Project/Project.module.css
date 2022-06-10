@@ -1,23 +1,19 @@
 .card {
     perspective: 150rem;
     position: relative;
-    /* height: 40rem; */
     width: 80%;
-    /* margin: 2rem; */
     box-shadow: none;
     background: none;
 }
 
 .cardSide {
-    /* height: 50%; */
     border-radius: 15px;
     transition: all 0.8s ease;
     backface-visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
-    width: 80%;
-    /* padding: 2rem; */
+    /* width: 90%; */
     color: white
 }
 
