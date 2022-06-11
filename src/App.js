@@ -4,7 +4,6 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import About from "./components/About/About";
 import CustomCursor from "custom-cursor-react";
 import 'custom-cursor-react/dist/index.css';
-import './App.css';
 import Contact from "./components/Contact/Contact";
 import Project from "./components/Project/Project";
 import MyServices from "./components/MyServices/MyServices";
@@ -12,6 +11,8 @@ import "swiper/css/bundle";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import MobileBar from "./components/MobileBar/MobileBar";
+import './App.css';
+
 
 function App() {
   return (
@@ -31,6 +32,11 @@ function App() {
         dimensions={40}
         fill='#8ED1FC'
         opacity={0.4}
+        smoothness={{
+          movement: 1,
+          scale: 0.1,
+          opacity: 0.2,
+        }}
         targetOpacity={0.7}
         targetScale={1.5}
       />
