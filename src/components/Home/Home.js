@@ -57,8 +57,8 @@ const Home = () => {
                     damping: 20
                 }}
             >
-                {/* lg:h-[35rem] */}
-                <div className="w-10/12 h-[550px] md:w-[35rem] md:h-[50rem] lg:w-[80%] lg:h-[35%] rounded-xl mx-auto bg-neutral overflow-y-auto">
+                {/* lg:w-[70rem] lg:h-[35rem] */}
+                <div className="w-10/12 h-[550px] md:w-[35rem] md:h-[50rem] lg:w-[80%] lg:h-[35%]git  rounded-xl mx-auto bg-neutral overflow-y-auto">
 
                     <div className=' grid grid-cols-1 lg:grid-cols-2 gap-3'>
 
