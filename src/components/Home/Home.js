@@ -42,12 +42,12 @@ const Home = () => {
     };
 
     const isDesktopOrLaptop = useMediaQuery({
-        query: '(min-width: 1224px)'
+        query: '(min-width: 1024px)'
       })
       const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
 
     return (
-        <div className="mt-5 md:mt-0 md:min-h-screen flex bg-base-200 justify-center items-center">
+        <div className="mt-5 md:mt-0 md:min-h-screen flex bg-base-200 justify-center items-center overflow-hidden">
             <motion.div
                 initial={{ scale: 0, rotate: 270 }}
                 animate={{ rotate: 0, scale: 1 }}
@@ -57,7 +57,8 @@ const Home = () => {
                     damping: 20
                 }}
             >
-                <div className="w-10/12 h-[550px] md:w-[35rem] md:h-[50rem] lg:w-[70rem] lg:h-[35rem] rounded-xl mx-auto bg-neutral overflow-y-auto">
+                {/* lg:h-[35rem] */}
+                <div className="w-10/12 h-[550px] md:w-[35rem] md:h-[50rem] lg:w-[80%] lg:h-[35%] rounded-xl mx-auto bg-neutral overflow-y-auto">
 
                     <div className=' grid grid-cols-1 lg:grid-cols-2 gap-3'>
 
